@@ -1,10 +1,10 @@
-import pygame
+import pygame, os
 
 from gamelib import vector
 
 class Player(pygame.sprite.Sprite):
 	size=vector.Vector(16, 16)
-	orig_image=pygame.image.load("resources/img/Player.png")
+	orig_image=pygame.image.load(os.path.join("resources", "img", "Player.png"))
 	orig_speed=5
 	def __init__(self, game, pos, sizeScale=1):
 		pygame.sprite.Sprite.__init__(self)
@@ -39,7 +39,7 @@ class Player(pygame.sprite.Sprite):
 
 class Enemy(pygame.sprite.Sprite):
 	size= vector.Vector(16, 16)
-	orig_image=pygame.image.load("resources/img/Enemy.png")
+	orig_image=pygame.image.load(os.path.join("resources", "img", "Enemy.png"))
 	toP1, toP2 = 1, 2
 	def __init__(self, game, pos1, pos2, speed, sizeScale=1):
 		pygame.sprite.Sprite.__init__(self)
@@ -75,7 +75,7 @@ class Wall(pygame.sprite.Sprite):
 
 class Food(pygame.sprite.Sprite):
 	size= vector.Vector(8, 8)
-	orig_image=pygame.image.load("resources/img/Food.png")
+	orig_image=pygame.image.load(os.path.join("resources", "img", "Food.png"))
 	def __init__(self, game, pos, sizeScale=1):
 		pygame.sprite.Sprite.__init__(self)
 		self.game=game
