@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<level name="Level 2" size="640x480" playerPos="40x30">
+    <wall pos="0x0" size="640x20"/>
+    <wall pos="0x0" size="20x480"/>
+    <wall pos="0x460" size="640x20"/>
+    <wall pos="620x0" size="20x480"/>
+
+    <wall pos="20x40" size="580x20"/>
+    <wall pos="40x80" size="580x20"/>
+    <wall pos="20x120" size="580x20"/>
+    <wall pos="40x160" size="580x20"/>
+    <enemy pos1="100x10" pos2="100x170" speed="8"/>
+    <enemy pos2="200x10" pos1="200x170" speed="8"/>
+    <enemy pos1="300x10" pos2="300x170" speed="8"/>
+    <enemy pos2="400x10" pos1="400x170" speed="8"/>
+    <enemy pos1="500x10" pos2="500x170" speed="8"/>
+    <food pos="500x30"/>
+    <food pos="400x70"/>
+    <food pos="300x110"/>
+    <food pos="200x150"/>
+    <target pos="200x240" size="50x50"/>
+</level>
